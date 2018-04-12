@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile</title>
+</head>
+<body>
+	<% include partial/nav.ejs %>
+	<h1>Contact us</h1>
+	<form id="Contact-form" method="POST" action="/contact">
+		<label for="who">Who do you want to contact?</label>
+		<input type="text" name="who" >
+		<label for="department">Which department</label>
+		<input type="text" name="department" >
+		<label for="email">Your email</label>
+		<input type="email" name="email" />
+		<input type="submit" name="submit" />
+	</form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile</title>
+</head>
+<body>
+	<% include partial/nav.ejs %>
+	<h1>Welcome to the most awesome website on the internet</h1>
+	<p>You are <%= person %></p>
+	<p>Your age is <%= info.age %></p>
+	<p>You are from <%= info.city %></p>
+	<h2>Hobbies</h2>
+	<% info.hobby.forEach(function(item){ %>
+	<li><%= item %></li>
+     <% }) %>
+</body>
+</html>
